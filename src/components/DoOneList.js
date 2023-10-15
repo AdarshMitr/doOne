@@ -1,17 +1,27 @@
-import React from 'react'
+import React from "react";
 
 const DoOneList = (props) => {
   return (
-    <div>
-        <li className='list-item'>{props.item}
-            <span className='icons'>
-            <i className="fa-solid fa-trash" onClick={(e)=>{
-                props.deleteItem(props.index)
-            }}></i>
-            </span>
-        </li>
-    </div>
-  )
-}
+    <div className="list-item">
+      <div>
+        <li>{props.item}</li>
+      </div>
 
-export default DoOneList
+      <div className="icons-group">
+        <span className="icons">
+          <i className="fa-regular fa-pen-to-square"></i>
+        </span>
+        <span className="icons">
+          <i
+            className="fa-solid fa-trash"
+            onClick={() => {
+              props.deleteItem(props.index);
+            }}
+          ></i>
+        </span>
+      </div>
+    </div>
+  );
+};
+
+export default DoOneList;

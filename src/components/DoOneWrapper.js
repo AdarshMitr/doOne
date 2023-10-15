@@ -12,21 +12,18 @@ const DoOneWrapper = () => {
     let newDoOneList=[...doOneList];
     newDoOneList.splice(key,1);
     setDoOneList([...newDoOneList])
-  }
+  };
+   
   return (
     <div className="doOne-wrapper">
       <DoOneForm addList={addList} />
       <h2 className="list-heading">Tasks</h2>
-      <hr />
+      
+      
       {doOneList.map((item, i) => {
-        return <DoOneList key={i} index={i} item={item} deleteItem={deleteListItem}/>;
+        return <DoOneList key={i} index={i} item={item} deleteItem={deleteListItem}  />;
       })}
-      {/* <DoOneList/> */}
-      {/* <div className="task-status">
-          <button className="btn-status">Remaining</button>
-          <button className="btn-status ">Completed</button>
-          <button className="btn-status">All</button>
-        </div> */}
+    
     </div>
   );
 };
