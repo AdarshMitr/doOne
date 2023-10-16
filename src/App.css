@@ -4,41 +4,56 @@
   box-sizing: border-box;
 }
 
-
-.header {
-  margin: 15px;
+.App {
   display: flex;
-  flex-direction: row;
-  float: inline-start;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  box-shadow: black;
+}
+.header {
+  margin-top: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .logo {
   height: 60px;
+  margin-bottom: 15px;
 }
 .date {
+  margin-top: 10px;
+  
+  padding: 5px;
+  border-top: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+  border-radius: 10px;
+}
+.date:hover{
   border-top: 2px solid #637fff;
   border-bottom: 2px solid #ff954f;
   border-radius: 10px;
-  padding: 5px;
+ 
 }
 .doOne-wrapper {
- display: flex;
- flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
   padding: 10px;
   align-items: center;
   justify-items: center;
-  width: 100%;
- 
+  z-index: 10;
+  box-sizing: border-box;
+  box-shadow:0 0 40px rgba(211, 200, 200, 0.8);
+  background-color: rgb(83, 123, 231);
+  border-radius: 12px;
 }
 .doOne-form {
   display: flex;
-  justify-content: center;
   width: 60vw;
-  
 }
 .input-box {
+  margin-top: 5px;
   padding-left: 5px;
   width: 60vw;
   height: 50px;
@@ -59,41 +74,40 @@
   border-style: none;
 }
 .submit:hover {
-  background-color: rgb(65, 131, 65);
+  background-color: rgb(107, 233, 107);
 }
 
-.list-item{
+.list-item {
   list-style: none;
   display: flex;
-  border: 1px solid blue;
-  width:51vw;
+  border: 2px solid rgb(193, 247, 149);
+  width: 51vw;
   justify-content: space-between;
   margin-top: 15px;
   padding: 5px;
-  border-radius: 5px;
-
+  border-radius: 8px;
+  font-size: 20px;
 }
 
-.list-heading{
+.list-heading {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.icons-group{
+.icons-group {
   display: flex;
-  
 }
-.icons{
+.icons {
   display: flex;
   padding-left: 10px;
-   
+  cursor: pointer;
 }
 
- @media only screen and (max-width:600px){
+@media only screen and (max-width: 600px) {
   .input-box {
     padding-left: 5px;
     width: 50vw;
     height: 30px;
-    font-size: 25px;
+    font-size: 15px;
     border-radius: 20px;
     text-align: center;
     border-width: 1px;
@@ -109,4 +123,4 @@
     cursor: pointer;
     border-style: none;
   }
- } 
+}
