@@ -55,7 +55,7 @@
   background-color: rgb(111, 146, 243);
   border-radius: 15px;
   width: 70vw;
-  height: 80vh;
+  height: 70vh;
 }
 .doOne-form {
   display: flex;
@@ -112,6 +112,15 @@
   display: flex;
   padding-left: 10px;
   cursor: pointer;
+}
+.del:hover{
+    color: red;
+  }
+  .edit:hover{
+    color: rgb(234, 248, 40);
+  }
+.check:hover{
+  color:rgb(140, 236, 140) ;
 }
 
 @media only screen and (max-width: 600px) {

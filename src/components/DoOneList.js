@@ -9,11 +9,15 @@ const DoOneList = (props) => {
 
       <div className="icons-group">
         <span className="icons">
-          <i className="fa-regular fa-pen-to-square"></i>
+        <i class="fa-solid fa-circle-check check"></i>
+        </span>
+      
+        <span className="icons">
+          <i className="fa-regular fa-pen-to-square edit"></i>
         </span>
         <span className="icons">
           <i
-            className="fa-solid fa-trash"
+            className="fa-solid fa-trash del"
             onClick={() => {
               props.deleteItem(props.index);
             }}
